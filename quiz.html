@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Quiz</title>
+  <link rel="icon" type="image/x-icon" href="sanskutri.ico">
+
+</head>
+
+<body>
+  <a href="index.html">
+    <img src="logo.png" alt="Logo">
+  </a>
+  <div class="containerNew">
+    <header>
+
+
+      <div class="timer">
+        <p>
+          Time:
+          <span id="timer">
+            0
+          </span>
+        </p>
+      </div>
+    </header>
+
+    <main class="quiz">
+      <div id="quiz-start">
+        <div class="landing" id="start-screen">
+          <h1 id="top">
+            Cyber Quiz
+          </h1>
+          <p class="try">
+            Try to answer the following
+            cyber security questions. Keep in
+            mind that incorrect answers
+            will decreases your score by
+            5 and correct answers increases
+            it by 10!
+          </p>
+          <button id="start" title="Start Quiz">
+            Start Quiz
+          </button>
+        </div>
+      </div>
+
+      <div class="hide" id="questions">
+        <h2 id="question-words"></h2>
+        <div class="options" id="options">
+        </div>
+      </div>
+
+      <div class="hide" id="quiz-end">
+        <a href="index.html">
+          <button id="back">
+            Go Back
+          </button>
+        </a>
+        <h2>All Done!</h2>
+        <p><b>Your final score is:
+          </b><span id="score-final">
+          </span>
+        </p>
+        <p>
+          Please enter your name:
+          <input type="text" id="name" max="3" />
+          <button id="submit-score">
+            Submit
+          </button>
+        <h1 id="congrats"></h1>
+        </p>
+      </div>
+
+      <div id="feedback" class="feedback hide">
+      </div>
+      <h1 id="score"></h1>
+    </main>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
